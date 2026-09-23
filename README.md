@@ -7,10 +7,10 @@ A financial performance comparison of **Barclays, Lloyds and NatWest** across th
 ## Dashboard Preview
 
 ### Performance Overview
-![Dashboard Overview](images/01_dashboard_overview.png)
+![Dashboard Overview](01_dashboard_overview.png)
 
 ### Financial Ratios
-![Financial Ratios](images/02_financial_ratios_table.png)
+![Financial Ratios](02_financial_ratios_table.png)
 
 ---
 
@@ -25,13 +25,13 @@ Headline profit alone does not show how well a bank is run. An investor or analy
 - Nine records: 3 banks × 3 financial years (2023, 2024, 2025)
 - Fields: Income, Expenses, Profit, Assets, Liabilities, Equity (**£ millions**)
 - Compiled from the banks' published annual results
-- Files: `data/bank_financial_analysis.csv`, `data/bank_financial_analysis.xls`
+- Files: `bank_financial_analysis.csv`, `bank_financial_analysis.xls`
 
 ---
 
 ## Approach
 
-**1. SQL** – created and loaded a structured table in SQLite (`sql/01_create_and_load.sql`)
+**1. SQL** – created and loaded a structured table in SQLite (`01_create_and_load.sql`)
 
 **2. Excel** – calculated the financial ratios:
 
@@ -81,14 +81,11 @@ Across all three banks: **£55.1bn** total profit, 60.9% average cost-to-income,
 ```
 UK-Banks-Financial-Analysis/
 ├── README.md
-├── dashboard/
-│   └── Banks_Financial_Analysis.pbix
-├── data/
-│   ├── bank_financial_analysis.csv
-│   └── bank_financial_analysis.xls
-├── images/
-└── sql/
-    └── 01_create_and_load.sql
+├── Banks_Financial_Analysis.pbix        Power BI dashboard
+├── bank_financial_analysis.csv          Data with ratios
+├── bank_financial_analysis.xls          Excel workbook
+├── 01_create_and_load.sql               SQL table setup
+└── 01–02 *.png                          Dashboard screenshots
 ```
 
 ---
